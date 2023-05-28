@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.body{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Choose{
+    display: flex;
+    /* border: 1px solid black ; */
+    width: 180px ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.HEX{
+    /* border: 1px solid pink  ; */
+    width: 100px ;
+    display: flex;
+    /* justify-content: space-around;
+    align-items: center; */
+    
+}
+
+.RGB{
+    /* border: 1px solid pink  ; */
+    width: 130px ;
+    display: flex;
+    /* justify-content: space-around;
+    align-items: center; */
+}
+
