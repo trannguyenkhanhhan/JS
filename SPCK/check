@@ -1,0 +1,39 @@
+day:1
+activities:0:
+time:"8:00 AM"
+description:"Depart from Ho Chi Minh City to Da Lat"
+1:
+time:"11:00 AM"
+description:"Arrive in Da Lat and check-in to hotel"
+2:
+time:"12:00 PM"
+description:"Lunch at a local restaurant"
+3:
+time:"2:00 PM"
+description:"Visit the Crazy House"
+4:
+time:"4:00 PM"
+description:"Explore the Dalat Market"
+5:
+time:"7:00 PM"
+description:"Dinner at a local restaurant"
+
+day:2
+activities:0:
+time:"9:00 AM"
+description:"Visit the Datanla Waterfall"
+1:
+time:"11:00 AM"
+description:"Enjoy a scenic cable car ride"
+2:
+time:"1:00 PM"
+description:"Lunch at a local restaurant"
+3:
+time:"3:00 PM"
+description:"Visit the Linh Phuoc Pagoda"
+4:
+time:"5:00 PM"
+description:"Explore the Valley of Love"
+5:
+time:"7:00 PM"
+description:"Dinner at a local restaurant"

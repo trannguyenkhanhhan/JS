@@ -30,15 +30,18 @@ function destination(destination) {
     document.getElementById("location").appendChild(h3);
 }
 
-function button() { 
-    document.getElementById("plan").innerHTML = " ";
-    let day = document.getElementById("days").value
-    for (let i = 1; i<=day; i++){
-        let div = document.createElement("div")
-        let img = document.createElement("img")
-        img.setAttribute("src", "https://img.icons8.com/?size=512&id=WwP9ajtrQdZj&format=png");
-        document.getElementById("plan").appendChild(div)
-        div.appendChild(img);
-        div.innerText= "Day "+ i +":" + img
-    }
-}
+// function button() { 
+//     document.getElementById("plan").innerHTML = " ";
+//     let day = document.getElementById("days").value
+//     for (let i = 1; i<=day; i++){
+//         let div = document.createElement("div")
+//         let img = document.createElement("img")
+//         img.style.height='50px'
+//         img.setAttribute("src", "https://img.icons8.com/?size=512&id=WwP9ajtrQdZj&format=png");
+//         document.getElementById("plan").appendChild(div)
+//          div.appendChild(img);
+//         div.innerText= "Day "+ i +":" + img.appendChild("https://img.icons8.com/?size=512&id=WwP9ajtrQdZj&format=png")
+// }
+// }
+
+

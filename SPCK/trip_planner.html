@@ -1,51 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="trip_planner.css" />
-    <title>AI TRIP PLANNER (SPCK)</title>
-  </head>
-  <body>
 
-    <!-- header -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="trip_planner.css" />
+  <title>AI TRIP PLANNER (SPCK)</title>
+</head>
 
-    <div class="header">
-      <div class="logo">
-        <img
-          class="img"
-          src="https://i.pinimg.com/564x/d9/a8/d9/d9a8d9bbd5227a4abd1c5d4e250e1ef6.jpg"
-          alt="#"
-        />
-      </div>
-      <h1 class="title">AI TRIP PLANNER</h1>
-      <div class="account">
-        <a class="a_img" href=""><img  class="account_img" src="https://img.icons8.com/?size=512&id=7820&format=png" alt="#"></a>
-      </div>
+<body>
+
+  <!-- header -->
+
+  <div class="header">
+    <div class="logo">
+      <img class="img" src="https://i.pinimg.com/564x/d9/a8/d9/d9a8d9bbd5227a4abd1c5d4e250e1ef6.jpg" alt="#" />
     </div>
+    <h1 class="title">AI TRIP PLANNER</h1>
+    <div class="account">
+      <a class="a_img" href=""><img class="account_img" src="https://img.icons8.com/?size=512&id=7820&format=png"
+          alt="#"></a>
+      <a class="a_img" href="spck.html"><img class="account_img"
+          src="https://img.icons8.com/?size=512&id=Q1xkcFuVON39&format=png" alt="#"></a>
+    </div>
+  </div>
 
-    <!-- body -->
+  <!-- body -->
 
-    <div class="body">
-      <div class="search">
-        <div class="input">
-          <label for="days">Days</label>
+  <div class="body">
+    <div class="search">
+      <div class="input">
+        <label for="days">Days</label>
         <input id="days" class="text" type="text" />
         <label for="destination">Destination</label>
         <input id="destination" class="text" type="text" />
-        </div>
-        
-        <button onclick="button()" class="search_button">Create a plan</button>
       </div>
 
-      <div id="board" class="planner">
-        <div id="location" class="location"></div>
-        <div id="plan" class="plan"></div>
-
-      </div>
+      <button onclick="button()" class="search_button">Create a plan</button>
     </div>
 
-    <script src="trip_planner.js"></script>
-  </body>
+    <div id="board" class="planner">
+      <div id="location" class="location">DaLat, VietNam</div>
+      <div id="plan" class="plan">
+        <div class="plan1">
+          <div>
+            <p> Day 1 :</p>
+            <img class="plan_img" src="https://img.icons8.com/?size=512&id=WwP9ajtrQdZj&format=png"
+            alt="">
+          </div>
+          <div>
+            
+            <ul>
+              <li>time:"8:00 AM"
+                description:"Depart from Ho Chi Minh City to Da Lat"</li>
+              <li>time:"11:00 AM"
+                description:"Arrive in Da Lat and check-in to hotel"</li>
+              <li>time:"12:00 PM"
+                description:"Lunch at a local restaurant"</li>
+              <li>time:"2:00 PM"
+                description:"Visit the Crazy House"</li>
+              <li>time:"4:00 PM"
+                description:"Explore the Dalat Market"</li>
+              <li>time:"7:00 PM"
+                description:"Dinner at a local restaurant"</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="plan1">
+          <div>
+            <p> Day 2 :</p>
+            <img class="plan_img" src="https://img.icons8.com/?size=512&id=WwP9ajtrQdZj&format=png"
+            alt="">
+          </div>
+          <div>
+            
+            <ul>
+              <li>time:"9:00 AM"
+                description:"Visit the Datanla Waterfall""</li>
+              <li>time:"11:00 AM"
+                description:"Enjoy a scenic cable car ride""</li>
+              <li>time:"1:00 PM"
+                description:"Lunch at a local restaurant"</li>
+              <li>time:"3:00 PM"
+                description:"Visit the Linh Phuoc Pagoda"</li>
+              <li>time:"5:00 PM"
+                description:"Explore the Valley of Love"</li>
+              <li>time:"7:00 PM"
+                description:"Dinner at a local restaurant"</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="trip_planner.js"></script>
+</body>
+
 </html>

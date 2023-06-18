@@ -49,6 +49,7 @@
     width: 20%;
     height: 35%;
     margin-top: 23px;
+    margin-left: 25px;
 }
 
 
@@ -111,7 +112,7 @@
 }
 
 .location{
-    border: 1px solid red; 
+    border-bottom: 2px solid black; 
     height: 15%;
     display: flex;
     justify-content: center;
@@ -120,9 +121,36 @@
 }
 
 .plan{
-    border: 1px solid black; 
+    /* border: 1px solid black;  */
     height: 85%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
+.plan div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan_img {
+    height: 80px;
+    width: 80px;
+
+}
+
+.plan1 {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    width: 250px;
+    /* border: 1px solid green; */
+}
+
+.p {
+    border: 1px solid black;
+    width: 300px;
+}
+
