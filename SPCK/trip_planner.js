@@ -23,7 +23,6 @@
 
 
 
-
 function destination(destination) {
     document.getElementById("location").innerHTML = " ";
     let h3 = document.createElement("h3");
@@ -37,9 +36,9 @@ function button() {
     for (let i = 1; i<=day; i++){
         let div = document.createElement("div")
         let img = document.createElement("img")
-        img.src='https://img.icons8.com/?size=512&id=WwP9ajtrQdZj&format=png'
+        img.setAttribute("src", "https://img.icons8.com/?size=512&id=WwP9ajtrQdZj&format=png");
         document.getElementById("plan").appendChild(div)
-        div.appendChild(img)
+        div.appendChild(img);
         div.innerText= "Day "+ i +":" + img
     }
 }
