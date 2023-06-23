@@ -37,3 +37,73 @@ description:"Explore the Valley of Love"
 5:
 time:"7:00 PM"
 description:"Dinner at a local restaurant"
+
+
+
+
+
+
+{
+  "_id": "648ecd6c45d64c64784da0e8",
+  "plan": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "time": "8:00 AM",
+          "description": "Depart from Ho Chi Minh City to Da Lat"
+        },
+        {
+          "time": "11:00 AM",
+          "description": "Arrive in Da Lat and check-in to hotel"
+        },
+        {
+          "time": "12:00 PM",
+          "description": "Lunch at a local restaurant"
+        },
+        {
+          "time": "2:00 PM",
+          "description": "Visit the Crazy House"
+        },
+        {
+          "time": "4:00 PM",
+          "description": "Explore the Dalat Market"
+        },
+        {
+          "time": "7:00 PM",
+          "description": "Dinner at a local restaurant"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "time": "9:00 AM",
+          "description": "Visit the Datanla Waterfall"
+        },
+        {
+          "time": "11:00 AM",
+          "description": "Enjoy a scenic cable car ride"
+        },
+        {
+          "time": "1:00 PM",
+          "description": "Lunch at a local restaurant"
+        },
+        {
+          "time": "3:00 PM",
+          "description": "Visit the Linh Phuoc Pagoda"
+        },
+        {
+          "time": "5:00 PM",
+          "description": "Explore the Valley of Love"
+        },
+        {
+          "time": "7:00 PM",
+          "description": "Dinner at a local restaurant"
+        }
+      ]
+    }
+  ],
+  "key": "2-dalat, vietnam"
+}
