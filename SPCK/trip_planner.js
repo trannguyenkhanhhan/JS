@@ -1,22 +1,4 @@
 
-// function plan(activities) {
-//     document.getElementById("plan").innerHTML = " ";
-//     let day = document.getElementById("day").value
-
-//     for (let i = 1; i <= day; i++) {
-//         let divmain = document.createElement("div")
-//         document.getElementById("plan").appendChild(divmain)
-//         let div1 = document.createElement("div")
-//         let div2 = document.createElement("div")
-//         divmain.appendChild(div1);
-//         divmain.appendChild(div2);
-//         divmain.style.display = "flex"
-//         divmain.style.flexDirection = "column"
-//         div1.innerText = "Day " + i + ":"
-//         div2.innerText = activities
-//     }
-// }
-
 function createTravelPlan(day, destination) {
     let travelPlans = localStorage.getItem("travelPlans")
     travelPlans = [];
@@ -29,7 +11,7 @@ function createTravelPlan(day, destination) {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '4ef3a1f9d5msh1778acb92f14d5fp1e9061jsn5d9d208a48d1',
+            'X-RapidAPI-Key': '7b872b0183mshbce477f7a762407p10d5cbjsn12513eaaa669',
             'X-RapidAPI-Host': 'ai-trip-planner.p.rapidapi.com'
         }
     };
@@ -41,23 +23,34 @@ function createTravelPlan(day, destination) {
         h3.innerText = data.key;
         document.getElementById("location").appendChild(h3);
 
+
         document.getElementById("plan").innerHTML = " ";
         let day = data.plan
-        for(let i = 1; i <= day.length; i++){
-        let divmain = document.createElement("div")
-        document.getElementById("plan").appendChild(divmain)
-        let div1 = document.createElement("div")
-        let div2 = document.createElement("div")
-        divmain.appendChild(div1);
-        divmain.appendChild(div2);
-        divmain.style.width = "22%"
-        divmain.style.display = "flex"
-        divmain.style.flexDirection = "column"
-        div2.style.display = "flex"
-        div2.style.flexDirection = "column"
-        div1.innerText = "Day " + i + ":"
-        let activities = day[i-1].activities
-        div2.innerText = JSON.stringify(day[i-1].activities)
+        for (let i = 1; i <= day.length; i++) {
+            let divmain = document.createElement("div")
+            divmain.style.width = "22%"
+            divmain.style.display = "flex"
+            divmain.style.flexDirection = "column"
+
+
+            let h4 = document.createElement("h4")
+            divmain.appendChild(h4);
+            h4.innerText = "Day " + i + ":"
+
+
+            let activities = day[i - 1].activities
+            let div1 = document.createElement("div")
+            div1.style.display = "flex"
+            div1.style.flexDirection = "column"
+            let ul = document.createElement("ul")
+            for (let n = 0; n < activities.length; n++) {
+                let li = document.createElement("li")
+                li.innerText = activities[n].time + " : " + activities[n].description
+                ul.appendChild(li)
+            }
+            div1.appendChild(ul)
+            divmain.appendChild(div1)
+            document.getElementById("plan").appendChild(divmain)
 
         }
     })
