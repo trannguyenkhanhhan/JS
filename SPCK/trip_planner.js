@@ -11,7 +11,7 @@ function createTravelPlan(day, destination) {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '7b872b0183mshbce477f7a762407p10d5cbjsn12513eaaa669',
+            'X-RapidAPI-Key': 'e9366b32e5msh8530af5b9e13a14p1e2da2jsnb47c411fcb25',
             'X-RapidAPI-Host': 'ai-trip-planner.p.rapidapi.com'
         }
     };
